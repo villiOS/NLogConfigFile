@@ -1,0 +1,35 @@
+Create Procedure [dbo].[InsertLog]
+(
+    @time_stamp datetime,
+    @level nvarchar(MAX),
+    @logger nvarchar(MAX),
+    @message nvarchar(MAX),
+    @machineName nvarchar(MAX),
+    @userName nvarchar(MAX),
+    @callSite nvarchar(MAX),
+    @threadId nvarchar(MAX),
+    @logException nvarchar(MAX),
+    @stackTrace nvarchar(MAX)
+)
+AS
+INSERT INTO dbo.Genel
+(
+      [time_stamp]
+      ,[level]
+      ,[logger]
+      ,[message]
+      ,[machineName]
+      ,[userName]
+      ,[callSite]
+      ,[threadId]
+      ,[logException]
+      ,[stackTrace]
+)
+VALUES
+(
+       @time_stamp
+      ,@level
+      ,@logger
+      ,@message
+      ,@machineName
+      ,@userName

@@ -1,0 +1,9 @@
+***
+
+private static Logger logger = LogManager.GetCurrentClassLogger( );
+
+***
+
+logger.Info("ILCE_PRM listesi döndürüldü!");
+
+***
