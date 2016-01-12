@@ -33,3 +33,7 @@ VALUES
       ,@message
       ,@machineName
       ,@userName
+	  ,@callSite 
+	  ,@threadId 
+      ,@logException
+      ,@stackTrace
